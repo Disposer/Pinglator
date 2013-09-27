@@ -12,7 +12,7 @@ namespace Pinglator.Test.Console
         static void Main(string[] args)
         {
             var converter = new Converter();
-            const string input = "teahraan";
+            const string input = "node";
 
             var possibles = converter.GetPossibleWords(input);
             var output = possibles.Select(converter.ConvertIntermediate).ToList();

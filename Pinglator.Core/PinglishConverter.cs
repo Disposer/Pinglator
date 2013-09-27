@@ -42,7 +42,9 @@ namespace Pinglator.Core
                 {"c", new MultipleStateLetter("س", "ث", "ص", "ک")},
                 {"z", new MultipleStateLetter("ز", "ض", "ذ", "ظ")},
                 {"q", new MultipleStateLetter("ک", "ق")},
+                {"gh", new MultipleStateLetter("غ", "ق")},
                 {"x", new MultipleStateLetter("ز", "س")},
+                {"eh", new MultipleStateLetter("ه", "")},
             };
 
             SinglePersianLetter = new Dictionary<string, string>
@@ -61,7 +63,6 @@ namespace Pinglator.Core
                 {"ʃ", "ش"},
                 {"kh", "خ"},
                 {"ʒ", "ژ"},
-                {"gh", "ق"},
                 {"eyn", "ع"},
 
                 {"k", "ک"},
@@ -73,6 +74,7 @@ namespace Pinglator.Core
             };
         }
         #endregion
+
 
         private List<string> AddPossibleList(string subInput, List<string> inputList = null)
         {

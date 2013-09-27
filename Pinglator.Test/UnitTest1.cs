@@ -14,7 +14,7 @@ namespace Pinglator.Test
         public void ComplexConvertPinglish()
         {
             var converter = new Converter();
-            const string input = "teahraan";
+            const string input = "Asemilaan";
 
             var possibles = converter.GetPossibleWords(input);
             var output = possibles.Select(converter.ConvertIntermediate).ToList();
