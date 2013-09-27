@@ -12,7 +12,7 @@ namespace Pinglator.Test.Console
         static void Main(string[] args)
         {
             var converter = new Converter();
-            const string input = "node";
+            const string input = "yedoone";
 
             var possibles = converter.GetPossibleWords(input);
             var output = possibles.Select(converter.ConvertIntermediate).ToList();
@@ -21,6 +21,7 @@ namespace Pinglator.Test.Console
             foreach (var item in output)
                 finalList.AddRange(converter.GetPersianWords(item));
 
+            System.Console.WriteLine("possibles");
             foreach (var item in output)
                 Debug.WriteLine(item);
         }

@@ -8,18 +8,23 @@ namespace Pinglator.Core
     public class Converter
     {
         #region Constants
+
         private const string SEPERATOR = ".";
+
         #endregion
 
 
         #region Fields
+
         private static readonly Dictionary<string, MultipleStateLetter> MultiStateLetter;
         private static readonly Dictionary<string, MultipleStateLetter> MultiPersianLetter;
         private static readonly Dictionary<string, string> SinglePersianLetter;
+
         #endregion
 
 
         #region .ctor
+
         static Converter()
         {
             MultiStateLetter = new Dictionary<string, MultipleStateLetter>
@@ -73,6 +78,7 @@ namespace Pinglator.Core
                 {"ye", "ی"},
             };
         }
+
         #endregion
 
 
@@ -394,6 +400,23 @@ namespace Pinglator.Core
             }
 
             return builder.ToString();
+        }
+
+        public List<string> NormalizePossibleWords(List<string> possibles)
+        {
+            return possibles.Select(possible => Normalize(ConvertIntermediate(possible))).ToList();
+        }
+
+        private string Normalize(string possible)
+        {
+            var normal = possible.Replace("e", string.Empty)
+                .Replace("{ye}", string.Empty)
+                .Replace("{y}", string.Empty)
+                .Replace("{A}", string.Empty)
+                .Replace("{a}", string.Empty)
+                .Replace("{v}", string.Empty);
+
+            return normal;
         }
     }
 }

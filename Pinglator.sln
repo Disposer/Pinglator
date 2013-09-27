@@ -7,8 +7,6 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Pinglator.WinPhone.Converte
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Pinglator.Test", "Pinglator.Test\Pinglator.Test.csproj", "{A60E85F6-BB0C-4706-BA11-9D249943E76E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Pinglator.Test.Console", "Pinglator.Test.Console\Pinglator.Test.Console.csproj", "{74E138D0-41B1-4942-82A6-C04DD9080BEB}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Pinglator.VocabConverter", "Pinglator.VocabConverter\Pinglator.VocabConverter.csproj", "{AB3F9237-9009-4C2F-A0AA-4DF14E0FC001}"
 EndProject
 Global
@@ -55,14 +53,6 @@ Global
 		{A60E85F6-BB0C-4706-BA11-9D249943E76E}.Release|Any CPU.Build.0 = Release|Any CPU
 		{A60E85F6-BB0C-4706-BA11-9D249943E76E}.Release|ARM.ActiveCfg = Release|Any CPU
 		{A60E85F6-BB0C-4706-BA11-9D249943E76E}.Release|x86.ActiveCfg = Release|Any CPU
-		{74E138D0-41B1-4942-82A6-C04DD9080BEB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{74E138D0-41B1-4942-82A6-C04DD9080BEB}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{74E138D0-41B1-4942-82A6-C04DD9080BEB}.Debug|ARM.ActiveCfg = Debug|Any CPU
-		{74E138D0-41B1-4942-82A6-C04DD9080BEB}.Debug|x86.ActiveCfg = Debug|Any CPU
-		{74E138D0-41B1-4942-82A6-C04DD9080BEB}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{74E138D0-41B1-4942-82A6-C04DD9080BEB}.Release|Any CPU.Build.0 = Release|Any CPU
-		{74E138D0-41B1-4942-82A6-C04DD9080BEB}.Release|ARM.ActiveCfg = Release|Any CPU
-		{74E138D0-41B1-4942-82A6-C04DD9080BEB}.Release|x86.ActiveCfg = Release|Any CPU
 		{AB3F9237-9009-4C2F-A0AA-4DF14E0FC001}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{AB3F9237-9009-4C2F-A0AA-4DF14E0FC001}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{AB3F9237-9009-4C2F-A0AA-4DF14E0FC001}.Debug|ARM.ActiveCfg = Debug|Any CPU

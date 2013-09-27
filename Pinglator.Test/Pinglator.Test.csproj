@@ -39,6 +39,9 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Lex.Db">
+      <HintPath>..\packages\Lex.Db.1.1.3.0\lib\net40\Lex.Db.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core">
       <RequiredTargetFramework>3.5</RequiredTargetFramework>
@@ -64,6 +67,10 @@
     <ProjectReference Include="..\Pinglator.Core\Pinglator.Core.csproj">
       <Project>{0753b245-492a-457b-a7c1-cd07d37cfc30}</Project>
       <Name>Pinglator.Core</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Pinglator.VocabConverter\Pinglator.VocabConverter.csproj">
+      <Project>{ab3f9237-9009-4c2f-a0aa-4df14e0fc001}</Project>
+      <Name>Pinglator.VocabConverter</Name>
     </ProjectReference>
   </ItemGroup>
   <Choose>
